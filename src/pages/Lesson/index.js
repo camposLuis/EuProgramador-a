@@ -2,11 +2,11 @@ import React from 'react';
 import { Alert, Text } from 'react-native';
 
 import Background from '~/components/Background';
-import { Container, SubmitButton } from './styles';
+import { Container, SubmitButton, Avatar } from './styles';
 
 export default function Lesson({ navigation }) {
   function handleSubmitLesson_01() {
-    Alert.alert('Click', 'Lição 1');
+    Alert.alert('Click');
   }
   function handleSubmitLesson_02() {
     Alert.alert('Click', 'Lição 2');
@@ -20,6 +20,7 @@ export default function Lesson({ navigation }) {
   return (
     <Background>
       <Container>
+        <Avatar />
         <SubmitButton onPress={handleSubmitLesson_01}>
           <Text>Lição 1</Text>
         </SubmitButton>

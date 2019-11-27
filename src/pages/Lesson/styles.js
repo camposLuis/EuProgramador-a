@@ -24,3 +24,8 @@ export const SubmitButton = styled(RectButton)`
   justify-content: center;
   align-self: stretch;
 `;
+
+export const Avatar = styled.Image`
+  height: 50px;
+  width: 50px;
+`;
