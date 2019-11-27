@@ -1,5 +1,6 @@
 import React from 'react';
 import { View, Text, Alert, TouchableOpacity, StyleSheet } from 'react-native';
+import ImageAvatar from '~/assets/avatar.jpg';
 import {
   Container,
   Avatar,
@@ -29,7 +30,7 @@ export default function Menu() {
   return (
     <Background>
       <Container>
-        <Avatar />
+        <Avatar source={ImageAvatar} />
 
         <TouchableOpacity onPress={Inicio}>
           <ContainerMenu>

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Alert, Text } from 'react-native';
+import ImageAvatar from '~/assets/avatar.jpg';
 
 import Background from '~/components/Background';
 import { Container, SubmitButton, Avatar } from './styles';
@@ -20,7 +21,7 @@ export default function Lesson({ navigation }) {
   return (
     <Background>
       <Container>
-        <Avatar />
+        <Avatar source={ImageAvatar} />
         <SubmitButton onPress={handleSubmitLesson_01}>
           <Text>Lição 1</Text>
         </SubmitButton>

@@ -26,6 +26,7 @@ export const SubmitButton = styled(RectButton)`
 `;
 
 export const Avatar = styled.Image`
-  height: 50px;
-  width: 50px;
+  height: 70px;
+  width: 70px;
+  border-radius: 50px;
 `;
