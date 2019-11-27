@@ -8,18 +8,18 @@ import logo from '~/assets/logo2.png';
 
 export default function Apresentation({ navigation }) {
   useEffect(() => {
-    setTimeout(() => nextLoad(), 2000);
+    setTimeout(() => nextLoad(), 1000);
   }, []);
 
   function nextLoad() {
-    navigation.navigate('Principal');
+    navigation.navigate('Lessons');
   }
 
   return (
     <Background>
       <Container>
         <Image
-          style={{ width: 380, height: 114, resizeMode: 'stretch' }}
+          style={{ width: 281, height: 84, resizeMode: 'stretch' }}
           source={logo}
         />
       </Container>

@@ -3,6 +3,10 @@ import { createAppContainer, createSwitchNavigator } from 'react-navigation';
 
 import Apresentation from './pages/Apresentation';
 import Principal from './pages/Principal';
+import Menu from './components/Menu';
+import Lessons from './pages/Activity/index';
+import Lesson2 from './pages/Activity/index2';
+
 // import Principal from './components/TelaTerminal';
 
 export default (isSigned = false) =>
@@ -11,6 +15,9 @@ export default (isSigned = false) =>
       {
         Apresentation,
         Principal,
+        Menu,
+        Lessons,
+        Lesson2,
       },
       {
         initialRouteName: isSigned ? 'Apresentation' : 'Apresentation',
