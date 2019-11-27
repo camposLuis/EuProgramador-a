@@ -1,5 +1,5 @@
 import styled from 'styled-components/native';
-import {Image, View} from 'react-native'
+import { Image, View } from 'react-native';
 
 export const Container = styled.View`
   flex: 1;
@@ -9,9 +9,10 @@ export const Container = styled.View`
 `;
 
 export const Avatar = styled.Image`
-  height: 50px;
-  width: 50px;
-`
+  height: 70px;
+  width: 70px;
+  border-radius: 50px;
+`;
 
 export const ContainerMenu = styled.View`
   margin-left: 10px;
@@ -29,8 +30,6 @@ export const ContainerMenuTexto = styled.View`
   border-color: #FFF;
   border-bottom-width: 2px;
   */
-
-
 `;
 
 export const ContainerSubMenuTexto = styled.View`
