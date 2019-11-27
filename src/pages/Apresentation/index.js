@@ -12,14 +12,14 @@ export default function Apresentation({ navigation }) {
   }, []);
 
   function nextLoad() {
-    navigation.navigate('Principal');
+    navigation.navigate('Slider');
   }
 
   return (
     <Background>
       <Container>
         <Image
-          style={{ width: 380, height: 114, resizeMode: 'stretch' }}
+          style={{ width: 281, height: 84, resizeMode: 'stretch' }}
           source={logo}
         />
       </Container>
