@@ -1,10 +1,10 @@
-import React, { useEffect } from 'react';
-import { Image } from 'react-native';
+import React, { useEffect } from "react";
+import { Image } from "react-native";
 
-import { Container } from './styles';
-import Background from '~/components/Background';
+import { Container } from "./styles";
+import Background from "~/components/Background";
 
-import logo from '~/assets/logo2.png';
+import logo from "~/assets/logo2.png";
 
 export default function Apresentation({ navigation }) {
   useEffect(() => {
@@ -12,14 +12,14 @@ export default function Apresentation({ navigation }) {
   }, []);
 
   function nextLoad() {
-    navigation.navigate('Principal');
+    navigation.navigate("Slider");
   }
 
   return (
     <Background>
       <Container>
         <Image
-          style={{ width: 281, height: 84, resizeMode: 'stretch' }}
+          style={{ width: 281, height: 84, resizeMode: "stretch" }}
           source={logo}
         />
       </Container>
