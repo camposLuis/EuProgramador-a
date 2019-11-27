@@ -1,6 +1,6 @@
 import { createAppContainer, createSwitchNavigator } from 'react-navigation';
 // import { createBottomTabNavigator } from 'react-navigation-tabs';
-
+import Menu from '~/components/Menu';
 import Apresentation from './pages/Apresentation';
 import Principal from './pages/Principal';
 import Lesson from './pages/Lesson';
@@ -14,6 +14,7 @@ export default (isSigned = false) =>
         Principal,
         Lesson,
         Slider,
+        Menu,
       },
       {
         initialRouteName: isSigned ? 'Lesson' : 'Lesson',

@@ -1,32 +1,49 @@
 import styled from 'styled-components/native';
-import { RectButton } from 'react-native-gesture-handler';
-// import Button from 'react-native';
 
 export const Container = styled.View`
   flex: 1;
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  margin-left: 15px;
-  margin-right: 15px;
-`;
-export const SubmitButton = styled(RectButton)`
-  margin-top: 20px;
-  height: 50px;
-  background: #ffff;
-  border-radius: 4px;
-  align-items: center;
-  padding-right: 5px;
-  padding-left: 5px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  justify-content: center;
-  align-self: stretch;
 `;
 
 export const Avatar = styled.Image`
+  margin-top: 30px;
   height: 70px;
   width: 70px;
   border-radius: 50px;
+`;
+
+export const ContainerMenu = styled.View`
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.7);
+`;
+
+export const ContainerMenuTexto = styled.View`
+  align-items: center;
+
+  /*
+  border-style: solid;
+  border-color: #FFF;
+  border-bottom-width: 2px;
+  */
+`;
+
+export const ContainerSubMenuTexto = styled.View`
+  align-items: center;
+`;
+
+export const TextoMenu = styled.Text`
+  font-size: 16;
+  margin-top: 10px;
+  margin-bottom: 10px;
+`;
+
+export const TextoSubMenu = styled.Text`
+  font-size: 14;
+  margin-top: 10px;
+  margin-bottom: 10px;
 `;

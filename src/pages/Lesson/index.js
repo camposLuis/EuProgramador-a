@@ -1,9 +1,20 @@
 import React from 'react';
-import { Alert, Text } from 'react-native';
+import { Alert, Text, ScrollView } from 'react-native';
 import ImageAvatar from '~/assets/avatar.jpg';
 
+import Button from '~/components/Button';
 import Background from '~/components/Background';
-import { Container, SubmitButton, Avatar } from './styles';
+
+import {
+  Container,
+  Avatar,
+  ContainerMenu,
+  TextMenu,
+  TextoSubMenu,
+  TextoMenu,
+  ContainerMenuTexto,
+  ContainerSubMenuTexto,
+} from './styles';
 
 export default function Lesson({ navigation }) {
   function handleSubmitLesson_01() {
@@ -20,21 +31,39 @@ export default function Lesson({ navigation }) {
   }
   return (
     <Background>
-      <Container>
-        <Avatar source={ImageAvatar} />
-        <SubmitButton onPress={handleSubmitLesson_01}>
-          <Text>Lição 1</Text>
-        </SubmitButton>
-        <SubmitButton onPress={handleSubmitLesson_02}>
-          <Text>Lição 2</Text>
-        </SubmitButton>
-        <SubmitButton onPress={handleSubmitLesson_03}>
-          <Text>Lição 3</Text>
-        </SubmitButton>
-        <SubmitButton onPress={handleSubmitLesson_04}>
-          <Text>Lição 4</Text>
-        </SubmitButton>
-      </Container>
+      <ScrollView>
+        <Container>
+          <Avatar source={ImageAvatar} />
+          <Button onPress={handleSubmitLesson_01}>
+            <ContainerMenu>
+              <ContainerMenuTexto>
+                <TextoMenu>Lição 1</TextoMenu>
+              </ContainerMenuTexto>
+            </ContainerMenu>
+          </Button>
+          <Button onPress={handleSubmitLesson_02}>
+            <ContainerMenu>
+              <ContainerMenuTexto>
+                <TextoMenu>Lição 2</TextoMenu>
+              </ContainerMenuTexto>
+            </ContainerMenu>
+          </Button>
+          <Button onPress={handleSubmitLesson_03}>
+            <ContainerMenu>
+              <ContainerMenuTexto>
+                <TextoMenu>Lição 3</TextoMenu>
+              </ContainerMenuTexto>
+            </ContainerMenu>
+          </Button>
+          <Button onPress={handleSubmitLesson_04}>
+            <ContainerMenu>
+              <ContainerMenuTexto>
+                <TextoMenu>Lição 4</TextoMenu>
+              </ContainerMenuTexto>
+            </ContainerMenu>
+          </Button>
+        </Container>
+      </ScrollView>
     </Background>
   );
 }

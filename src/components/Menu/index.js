@@ -1,6 +1,7 @@
 import React from 'react';
 import { View, Text, Alert, TouchableOpacity, StyleSheet } from 'react-native';
 import ImageAvatar from '~/assets/avatar.jpg';
+import Button from '~/components/Button';
 import {
   Container,
   Avatar,
@@ -32,7 +33,7 @@ export default function Menu() {
       <Container>
         <Avatar source={ImageAvatar} />
 
-        <TouchableOpacity onPress={Inicio}>
+        <Button onPress={Inicio}>
           <ContainerMenu>
             <ContainerMenuTexto>
               <TextoMenu>Inicio</TextoMenu>
@@ -43,9 +44,9 @@ export default function Menu() {
               </TextoSubMenu>
             </ContainerSubMenuTexto>
           </ContainerMenu>
-        </TouchableOpacity>
+        </Button>
 
-        <TouchableOpacity onPress={Intermediario}>
+        <Button onPress={Intermediario}>
           <ContainerMenu>
             <ContainerMenuTexto>
               <TextoMenu>Intermediario</TextoMenu>
@@ -56,9 +57,9 @@ export default function Menu() {
               </TextoSubMenu>
             </ContainerSubMenuTexto>
           </ContainerMenu>
-        </TouchableOpacity>
+        </Button>
 
-        <TouchableOpacity onPress={Avancado}>
+        <Button onPress={Avancado}>
           <ContainerMenu>
             <ContainerMenuTexto>
               <TextoMenu>Avançado</TextoMenu>
@@ -70,9 +71,9 @@ export default function Menu() {
               </TextoSubMenu>
             </ContainerSubMenuTexto>
           </ContainerMenu>
-        </TouchableOpacity>
+        </Button>
 
-        <TouchableOpacity onPress={Outro}>
+        <Button onPress={Outro}>
           <ContainerMenu>
             <ContainerMenuTexto>
               <TextoMenu>Nossos Parceiros</TextoMenu>
@@ -84,7 +85,7 @@ export default function Menu() {
               </TextoSubMenu>
             </ContainerSubMenuTexto>
           </ContainerMenu>
-        </TouchableOpacity>
+        </Button>
       </Container>
     </Background>
   );
